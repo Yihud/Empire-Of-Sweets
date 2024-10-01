@@ -1,0 +1,54 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #8e44ad, #fa8072, #c8a2c8);;
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #333;
+}
+@keyframes gradientBG{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+header{
+    background-color: rgba(255,255,255,0.8);
+    color: #8e44ad;
+    padding: 1 rem;
+    text-align: center;
+    position: relative;
+}
+header img.logo{
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin: 0 1 rem;
+}
+nav ul li a{
+    color: #8e44ad;
+    text-decoration: none;
+}
+main{
+    padding: 2rem;
+    text-align: center;
+}
+footer{background-color: rgba(255,255,255,0.8);
+color: #8e44ad;
+text-align: center;
+padding: 0.5rem;
+position: fixed;
+width: 100%;
+bottom: 0;}
+html{
+    scroll-behavior: smooth;
+}
